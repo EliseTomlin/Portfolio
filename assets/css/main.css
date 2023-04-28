@@ -2329,6 +2329,7 @@ input, select, textarea {
 				.button.large {
 					font-size: 1.2em;
 					letter-spacing: 0;
+					margin-left: 0em;
 				}
 
 		/* Social */
