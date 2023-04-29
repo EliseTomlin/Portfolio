@@ -110,6 +110,30 @@ input, select, textarea {
 		height: 6em;
 	}
 
+	.container header{
+		position: relative;
+	}
+	.container img{
+		width: 100%;
+		height: auto;
+	}
+	.ptOverlay{
+		position:absolute;
+		top: 61%;
+		left: 48.2%;
+		transform: translate(-50%, -50%) ;
+		z-index: 1;
+		color: white;
+		font-size: .7em;
+		font-weight: bold;
+	}
+	@media (max-width: 768px) {
+		.container .ptOverlay {
+		  position: static;
+		  transform: none;
+		  text-align: center;
+		}
+	  }
 	a {
 		-moz-transition: color .2s ease-in-out;
 		-webkit-transition: color .2s ease-in-out;
