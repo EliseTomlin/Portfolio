@@ -105,6 +105,11 @@ input, select, textarea {
 		font-size: 13pt;
 	}
 
+	#girlCodingIcon{
+		width: 6em;
+		height: 6em;
+	}
+
 	a {
 		-moz-transition: color .2s ease-in-out;
 		-webkit-transition: color .2s ease-in-out;
@@ -211,6 +216,9 @@ input, select, textarea {
 		header > p {
 			font-size: 1.25em;
 			margin: 0;
+			padding-top: 1em;
+			font-family: 'cursive', fantasy, sans-serif;
+
 		}
 
 	footer {
@@ -242,7 +250,9 @@ input, select, textarea {
 				.container.medium {
 					width: 900px;
 				}
-
+				/* .image img{
+					height: 15em;
+				} */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -254,7 +264,11 @@ input, select, textarea {
 				.container.medium {
 					width: 720px;
 				}
-
+					
+				/* .image img{
+					height: 23em;
+				} */
+				
 		}
 
 		@media screen and (max-width: 980px) {
@@ -266,7 +280,9 @@ input, select, textarea {
 				.container.medium {
 					width: 75%;
 				}
-
+				/* .image img{
+					height: 21em;
+				} */
 		}
 
 		@media screen and (max-width: 736px) {
@@ -279,7 +295,9 @@ input, select, textarea {
 				.container.medium {
 					width: 100%;
 				}
-
+				/* .image img{
+					height: 15em;
+				} */
 		}
 
 /* Row */
@@ -1728,7 +1746,7 @@ input, select, textarea {
 			text-align: center;
 		}
 		.button + .button{
-			margin-left: 1em;
+			margin-left: 0em;
 		}
 
 		.bottom{
