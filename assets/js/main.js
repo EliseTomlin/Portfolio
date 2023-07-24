@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Start typing strongText as bold
             typedText.innerHTML += `<strong style="font-weight: 700">${strongText}</strong>`;
             charIndex++;
-            setTimeout(typeText, 100);
+            setTimeout(typeText, 1000);
         } else {
             cursor.style.display = 'none'; // Hide cursor when typing is done
         }
     }
 
-    setTimeout(typeText, 1000); // Start typing after 1 second
+    setTimeout(typeText, 100); // Start typing after 1 second
 });
 
 
