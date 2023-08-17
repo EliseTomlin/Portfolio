@@ -32,3 +32,39 @@
 		});
 
 })(jQuery);
+
+//typed heading=====================
+
+document.addEventListener('DOMContentLoaded', function () {
+    const heading = document.getElementById('typing-heading'); // Get the heading element
+    const typedText = document.getElementById('typed-text'); // Get the element where typed text will appear
+    const cursor = document.getElementById('cursor'); // Get the cursor element
+
+    const textBeforeStrong = "Hi. I'm "; // Text before the strong element
+    const strongText = "Elise"; // Text inside the strong element
+
+    heading.style.display = 'none'; // Hide the original heading
+    cursor.style.display = 'inline'; // Display the cursor
+
+    let charIndex = 0;
+
+    function typeText() {
+        if (charIndex < textBeforeStrong.length) {
+            typedText.textContent += textBeforeStrong.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100);
+        } else if (charIndex === textBeforeStrong.length) {
+            // Start typing strongText as bold
+            typedText.innerHTML += `<strong style="font-weight: 700">${strongText}</strong>`;
+            charIndex++;
+            setTimeout(typeText, 100);
+        } else {
+            cursor.style.display = 'none'; // Hide cursor when typing is done
+        }
+    }
+
+    setTimeout(typeText, 1000); // Start typing after 1 second
+});
+
+
+
