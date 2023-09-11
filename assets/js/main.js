@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    setTimeout(typeText, 100); // Start typing after 1 second
+    setTimeout(typeText, 100); // Start typing after .1 second
 });
 
 
